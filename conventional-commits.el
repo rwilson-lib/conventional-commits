@@ -135,6 +135,7 @@ The final message displays the chosen commit type, scope, and description."
     final-msg)) ; Return the final commit message
 
 
+;;;###autoload
 (defun insert-conventional-commits ()
   "Insert a conventional commit message into the current buffer."
   (interactive)
