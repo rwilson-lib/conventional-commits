@@ -121,7 +121,6 @@ The final message displays the chosen commit type, scope, and description."
 
 (defun conventional-commits ()
   "Generate a conventional commit message interactively."
-  (interactive)
   ;; Replace with your implementation or define `choose-commit-type` and `choose-scope`.
   (let* ((commit-type (choose-commit-type))
          (commit-msg (if (y-or-n-p "Want to add a scope? ")
