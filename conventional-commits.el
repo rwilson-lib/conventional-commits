@@ -96,7 +96,7 @@
   "Prompt the user to choose a commit type with descriptions."
   (let* ((options (mapcar (lambda (type) (cons (format "%-10s %s" (car type) (cdr type)) (car type)))
 			  commit-types-list))
-	 (chosen-type (completing-read "Choose a commit type: " options nil t nil nil '("feat")))
+	 (chosen-type (completing-read "Choose a commit type: " options nil t nil nil '("fix")))
 	 (key (car (split-string chosen-type)))
 	 (entry (assoc (intern key) commit-types-list)))
     entry
